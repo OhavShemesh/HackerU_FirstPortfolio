@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100vw;
+    height: 68.8vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 742.7px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    font-family: 'Assistant', sans-serif;
+    color: rgba(211, 225, 14, 1);
+    font-size: 86px;
+    text-align: center;
+    top: 182px;
+}
+
+p {
+    position: absolute;
+    color: rgba(249, 249, 249, 1);
+    font-size: 20px;
+    font-family: 'Assistant', sans-serif;
+    margin-top: 23px;
+    text-align: center;
+    top: 318px;
+}
+
+form {
+    position: absolute;
+    top: 826px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+    align-items: center;
+    gap: 37.5px;
+}
+
+label {
+    font-size: 16px;
+    font-family: 'Assistant', sans-serif;
+    color: rgba(1, 21, 96, 1);
+    font-weight: bold;
+}
+
+input {
+    width: 417.5px;
+    height: 50px;
+    background-color: rgba(246, 246, 246, 1);
+    border: none;
+    border-bottom: 4px solid rgba(211, 225, 14, 1);
+}
+
+button {
+    width: 166px;
+    height: 50px;
+    background-color: rgba(211, 225, 14, 1);
+    color: rgba(1, 21, 96, 1);
+    font-size: 22px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    border: none;
+    margin-right: 23.5px;
+}
+
+@media(max-width:768px) {
+    img {
+        width: 768px;
+    }
+}
