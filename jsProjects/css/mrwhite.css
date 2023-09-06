@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  user-select: none;
+}
+/* header */
+.header {
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* Player Scale */
+.scale {
+  margin: 20px auto;
+  width: 35vw;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  background-color: #176b87;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.player {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+/* scaledn */
+.scaledn {
+  text-align: center;
+  display: none;
+}
+.scaledn a {
+  color: purple;
+}
+/* Cards */
+.cards {
+  display: grid;
+  width: 60vw;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 50px auto;
+  gap: 30px;
+}
+.card {
+  border: 1px solid #000;
+  height: 250px;
+  border-radius: 30px;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 6rem;
+}
+@media screen and (max-width: 1300px) {
+  .scale {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .scale {
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .scale {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 950px) {
+  .scale {
+    width: 55vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .scale {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  .scale {
+    width: 65vw;
+  }
+}
+/* Words */
+.secretword {
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vw;
+  color: white;
+  flex-direction: column;
+}
+.okbtn {
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+.playername {
+  width: 60vw;
+  height: 50px;
+  font-size: 2rem;
+  outline: none;
+  text-align: center;
+  display: none;
+}

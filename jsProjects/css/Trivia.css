@@ -1,0 +1,657 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  user-select: none;
+}
+
+/* MainPage */
+#mainpage {
+  display: block;
+}
+
+/* Header */
+.header h1 {
+  text-align: center;
+  font-size: 7rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.header p {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+}
+/* Grid */
+.grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 70px;
+  width: 90vw;
+}
+
+.trivia {
+  border: 1px solid #000;
+  height: 200px;
+  border-radius: 30px;
+  opacity: 0.7;
+  transition: mainpage 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trivia h1 {
+  font-size: 4rem;
+  text-shadow: -2px -2px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.trivia:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.trivia1 {
+  background-image: url(../../sources/images/soccer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.trivia2 {
+  background-image: url(../../sources/images/globe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.trivia3 {
+  background-image: url(../../sources/images/israel.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.trivia4 {
+  background-image: url(../../sources/images/food.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.trivia5 {
+  background-image: url(../../sources/images/celebs.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.trivia6 {
+  background-image: url(../../sources/images/professions.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+/* Soccer */
+#soccer {
+  display: none;
+}
+.soccerqu h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 4rem;
+}
+.soccergrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 70px;
+  width: 90vw;
+}
+.soccer {
+  border: 1px solid #000;
+  height: 150px;
+  border-radius: 30px;
+  opacity: 0.7;
+  transition: mainpage 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  font-size: 3rem;
+  text-align: center;
+}
+.soccer:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.counters {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.soccergameended {
+  display: none;
+}
+.soccerscore {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.soccerscore h1 {
+  text-align: center;
+}
+.soccerscore h1:nth-child(1) {
+  color: green;
+}
+.soccerscore h1:nth-child(2) {
+  color: red;
+}
+@media screen and (max-width: 1200px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  .soccerqu h1 {
+    font-size: 2rem;
+  }
+  .soccer {
+    font-size: 2rem;
+  }
+  .counters h1 {
+    font-size: 1.1rem;
+  }
+  .counters {
+    gap: 50px;
+  }
+  .soccergrid {
+    gap: 20px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Soccer */
+#world {
+  display: none;
+}
+.worldqu h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 4rem;
+}
+.worldgrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 70px;
+  width: 90vw;
+}
+.world {
+  border: 1px solid #000;
+  height: 150px;
+  border-radius: 30px;
+  opacity: 0.7;
+  transition: mainpage 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  font-size: 3rem;
+  text-align: center;
+}
+.world:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.counters {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.worldgameended {
+  display: none;
+}
+.worldscore {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.worldscore h1 {
+  text-align: center;
+}
+.worldscore h1:nth-child(1) {
+  color: green;
+}
+.worldscore h1:nth-child(2) {
+  color: red;
+}
+@media screen and (max-width: 1200px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  .worldqu h1 {
+    font-size: 2rem;
+  }
+  .world {
+    font-size: 2rem;
+  }
+  .counters h1 {
+    font-size: 1.1rem;
+  }
+  .counters {
+    gap: 50px;
+  }
+  .worldgrid {
+    gap: 20px;
+  }
+}
+#israel {
+  display: none;
+}
+.israelqu h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 4rem;
+}
+.israelgrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 70px;
+  width: 90vw;
+}
+.israel {
+  border: 1px solid #000;
+  height: 150px;
+  border-radius: 30px;
+  opacity: 0.7;
+  transition: mainpage 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  font-size: 3rem;
+  text-align: center;
+}
+.israel:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.counters {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.israelgameended {
+  display: none;
+}
+.israelscore {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.israelscore h1 {
+  text-align: center;
+}
+.israelscore h1:nth-child(1) {
+  color: green;
+}
+.israelscore h1:nth-child(2) {
+  color: red;
+}
+@media screen and (max-width: 1200px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  .israelqu h1 {
+    font-size: 2rem;
+  }
+  .israel {
+    font-size: 2rem;
+  }
+  .counters h1 {
+    font-size: 1.1rem;
+  }
+  .counters {
+    gap: 50px;
+  }
+  .israelgrid {
+    gap: 20px;
+  }
+}
+#food {
+  display: none;
+}
+.foodqu h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 4rem;
+}
+.foodgrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 70px;
+  width: 90vw;
+}
+.food {
+  border: 1px solid #000;
+  height: 150px;
+  border-radius: 30px;
+  opacity: 0.7;
+  transition: mainpage 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  font-size: 3rem;
+  text-align: center;
+}
+.food:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.counters {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.foodgameended {
+  display: none;
+}
+.foodscore {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.foodscore h1 {
+  text-align: center;
+}
+.foodscore h1:nth-child(1) {
+  color: green;
+}
+.foodscore h1:nth-child(2) {
+  color: red;
+}
+@media screen and (max-width: 1200px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  .foodqu h1 {
+    font-size: 2rem;
+  }
+  .food {
+    font-size: 2rem;
+  }
+  .counters h1 {
+    font-size: 1.1rem;
+  }
+  .counters {
+    gap: 50px;
+  }
+  .foodgrid {
+    gap: 20px;
+  }
+}
+#celebrities {
+  display: none;
+}
+.celebritiesqu h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 4rem;
+}
+.celebritiesgrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 70px;
+  width: 90vw;
+}
+.celebrities {
+  border: 1px solid #000;
+  height: 150px;
+  border-radius: 30px;
+  opacity: 0.7;
+  transition: mainpage 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  font-size: 3rem;
+  text-align: center;
+}
+.celebrities:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.counters {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.celebritiesgameended {
+  display: none;
+}
+.celebritiesscore {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.celebritiesscore h1 {
+  text-align: center;
+}
+.celebritiesscore h1:nth-child(1) {
+  color: green;
+}
+.celebritiesscore h1:nth-child(2) {
+  color: red;
+}
+@media screen and (max-width: 1200px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  .celebritiesqu h1 {
+    font-size: 2rem;
+  }
+  .celebrities {
+    font-size: 2rem;
+  }
+  .counters h1 {
+    font-size: 1.1rem;
+  }
+  .counters {
+    gap: 50px;
+  }
+  .celebritiesgrid {
+    gap: 20px;
+  }
+}
+#professions {
+  display: none;
+}
+#professions .header h1 {
+  font-size: 2.5rem;
+}
+.professionsqu h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 4rem;
+}
+.professionsgrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 70px;
+  width: 90vw;
+}
+.professions {
+  border: 1px solid #000;
+  height: 150px;
+  border-radius: 30px;
+  opacity: 0.7;
+  transition: mainpage 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  font-size: 3rem;
+  text-align: center;
+}
+.professions:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.counters {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.professionsgameended {
+  display: none;
+}
+.professionsscore {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.professionsscore h1 {
+  text-align: center;
+}
+.professionsscore h1:nth-child(1) {
+  color: green;
+}
+.professionsscore h1:nth-child(2) {
+  color: red;
+}
+@media screen and (max-width: 1200px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  .professionsqu h1 {
+    font-size: 2rem;
+  }
+  .professions {
+    font-size: 2rem;
+  }
+  .counters h1 {
+    font-size: 1.1rem;
+  }
+  .counters {
+    gap: 50px;
+  }
+  .professionsgrid {
+    gap: 20px;
+  }
+}
+.returnplace {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.return {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+}
+
+/* Media Query */
+@media screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+  .trivia {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .trivia h1 {
+    font-size: 3rem;
+  }
+  .trivia {
+    height: 100px;
+  }
+  .grid {
+    gap: 20px;
+  }
+  .soccer,
+  .israel,
+  .food,
+  .celebrities,
+  .professions {
+    height: 100px;
+    font-size: 1.5rem;
+  }
+  .world {
+    font-size: 1.2rem;
+  }
+  .soccerqu h1,
+  .worldqu h1,
+  .israelqu h1,
+  .foodqu h1,
+  .celebritiesqu h1,
+  .professionsqu h1 {
+    font-size: 1rem;
+  }
+  .counters h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 300px) {
+  .trivia h1 {
+    font-size: 2rem;
+  }
+  .grid {
+    gap: 20px;
+  }
+  .soccer,
+  .israel,
+  .food,
+  .celebrities,
+  .professions {
+    font-size: 1rem;
+    height: 60px;
+  }
+  .world {
+    font-size: 0.8rem;
+    height: 100px;
+  }
+}
