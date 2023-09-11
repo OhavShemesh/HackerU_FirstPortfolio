@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: lightyellow;
+  user-select: none;
+}
+/* Header */
+.header h1 {
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 3px 3px 10px turquoise;
+  color: turquoise;
+}
+/* Settings */
+.settings {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.startgamebtn {
+  font-size: 1.5rem;
+  border: none;
+  background-color: lightblue;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 3px 3px 0 black;
+  color: black;
+  font-weight: bold;
+}
+.startgamebtn:active {
+  box-shadow: -3px -3px 0 black;
+}
+/* grid */
+.grid {
+  margin-top: 30px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(3, 150px);
+  grid-template-areas:
+    "card0 card1 card2 card3 card4 card5"
+    "card6 card7 card8 card9 card10 card11"
+    "card12 card13 card14 card15 card16 card17";
+  gap: 10px;
+}
+.card {
+  width: 100px;
+  height: 150px;
+  border: 1px solid #000;
+  position: relative;
+}
+.card img {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+}
+.card img[alt="strawberry"] {
+  transform: scale(0.8);
+}
+.card img[alt="apple"] {
+  transform: scale(0.8);
+}
+.card img[alt="grapes"] {
+  transform: scale(0.8);
+}
+.card img[alt="mango"] {
+  transform: scale(0.9);
+}
+.card img[alt="cherry"] {
+  transform: scale(1.1);
+}
+.card img[alt="lightbluetapet"] {
+  transform: scale(1.01);
+  transform: translate(-1px, -1px);
+  transition: 0.3s all ease-in-out;
+  opacity: 1;
+}
+.memory {
+  margin: 0 auto;
+  width: 70vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.memory h1 {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+@media screen and (max-width: 769px) {
+  .header h1 {
+    font-size: 4rem;
+  }
+  .grid {
+    grid-template-columns: repeat(6, 70px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 5px;
+  }
+  .card,
+  .card img {
+    width: 70px;
+    height: 120px;
+  }
+  .memory h1 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  .grid {
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+  .card,
+  .card img {
+    width: 50px;
+    height: 100px;
+  }
+  .memory h1 {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  .grid {
+    grid-template-columns: repeat(6, 40px);
+    grid-template-rows: repeat(3, 90px);
+    gap: 5px;
+  }
+  .card,
+  .card img {
+    width: 40px;
+    height: 90px;
+  }
+  .memory {
+    width: 90vw;
+  }
+  .memory h1 {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+}

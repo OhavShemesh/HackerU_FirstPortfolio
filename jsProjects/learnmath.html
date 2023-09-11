@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Math</title>
+    <link rel="stylesheet" href="css/learnmath.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mainpage">
+      <div class="header">
+        <h1>Learn Math</h1>
+        <h3>What Are We Learning Today?</h3>
+        <div class="mathoptions">
+          <div class="option">
+            <div class="top">+</div>
+            <div class="bottom">Addition</div>
+          </div>
+          <div class="option">
+            <div class="top">-</div>
+            <div class="bottom">Subtraction</div>
+          </div>
+          <div class="option">
+            <div class="top">X</div>
+            <div class="bottom">Multiplication</div>
+          </div>
+          <div class="option">
+            <div class="top">&divide</div>
+            <div class="bottom">Divide</div>
+          </div>
+          <div class="option">
+            <div class="top">+ -</div>
+            <div class="bottom">Add And Sub</div>
+          </div>
+          <div class="option">
+            <div class="top">+ - X &divide</div>
+            <div class="bottom">Advance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="addition">
+      <div class="header">
+        <h1>Addition</h1>
+      </div>
+      <div class="additionproblem">
+        <h1></h1>
+      </div>
+      <div class="solution">
+        <div class="addsol"></div>
+        <div class="addsol"></div>
+        <div class="addsol"></div>
+        <div class="addsol"></div>
+        <div class="addsol"></div>
+        <div class="addsol"></div>
+      </div>
+      <div class="backplace">
+        <button class="backbtn">Back</button>
+      </div>
+      <div class="container">
+        <div class="rightorwrongbox">
+          <div class="rightorwrong">
+            <h1 style="color: green">Right</h1>
+            <h1 style="color: red">Wrong</h1>
+            <h1 class="addright"></h1>
+            <h1 class="addwrong"></h1>
+          </div>
+          <button class="addresetbutton">Reset</button>
+        </div>
+
+        <div class="difficulty">
+          <h1>Difficulty</h1>
+          <select class="addselect" name="" id="">
+            <option value="10">select</option>
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="1000">1000</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div id="subtraction">
+      <div class="header">
+        <h1>Subtraction</h1>
+      </div>
+      <div class="subtractionproblem">
+        <h1></h1>
+      </div>
+      <div class="solution">
+        <div class="subsol"></div>
+        <div class="subsol"></div>
+        <div class="subsol"></div>
+        <div class="subsol"></div>
+        <div class="subsol"></div>
+        <div class="subsol"></div>
+      </div>
+      <div class="backplace">
+        <button class="backbtn">Back</button>
+      </div>
+      <div class="container">
+        <div class="rightorwrongbox">
+          <div class="rightorwrong">
+            <h1 style="color: green">Right</h1>
+            <h1 style="color: red">Wrong</h1>
+            <h1 class="subright"></h1>
+            <h1 class="subwrong"></h1>
+          </div>
+          <button class="subresetbutton">Reset</button>
+        </div>
+
+        <div class="difficulty">
+          <h1>Difficulty</h1>
+          <select class="subselect" name="" id="">
+            <option value="10">select</option>
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="1000">1000</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div id="multiplication">
+      <div class="header">
+        <h1>Multiplication</h1>
+      </div>
+      <div class="multiplicationproblem">
+        <h1></h1>
+      </div>
+      <div class="solution">
+        <div class="mulsol"></div>
+        <div class="mulsol"></div>
+        <div class="mulsol"></div>
+        <div class="mulsol"></div>
+        <div class="mulsol"></div>
+        <div class="mulsol"></div>
+      </div>
+      <div class="backplace">
+        <button class="backbtn">Back</button>
+      </div>
+      <div class="container">
+        <div class="difficulty">
+          <h1>Difficulty</h1>
+          <select class="mulselect" name="" id="">
+            <option value="10">select</option>
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="1000">1000</option>
+          </select>
+        </div>
+
+        <div class="rightorwrongbox">
+          <div class="rightorwrong">
+            <h1 style="color: green">Right</h1>
+            <h1 style="color: red">Wrong</h1>
+            <h1 class="mulright"></h1>
+            <h1 class="mulwrong"></h1>
+          </div>
+          <button class="mulresetbutton">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div id="divide">
+      <div class="header">
+        <h1>Divide</h1>
+      </div>
+      <div class="divideproblem">
+        <h1></h1>
+      </div>
+      <div class="solution">
+        <div class="divsol"></div>
+        <div class="divsol"></div>
+        <div class="divsol"></div>
+        <div class="divsol"></div>
+        <div class="divsol"></div>
+        <div class="divsol"></div>
+      </div>
+      <div class="backplace">
+        <button class="backbtn">Back</button>
+      </div>
+      <div class="container">
+        <div class="difficulty">
+          <h1>Difficulty</h1>
+          <select class="divselect" name="" id="">
+            <option value="10">select</option>
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="1000">1000</option>
+          </select>
+        </div>
+
+        <div class="rightorwrongbox">
+          <div class="rightorwrong">
+            <h1 style="color: green">Right</h1>
+            <h1 style="color: red">Wrong</h1>
+            <h1 class="divright"></h1>
+            <h1 class="divwrong"></h1>
+          </div>
+          <button class="divresetbutton">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div id="addorsub">
+      <div class="header">
+        <h1>Add Or Sub</h1>
+      </div>
+      <div class="addorsubproblem">
+        <h1></h1>
+      </div>
+      <div class="solution">
+        <div class="addorsol"></div>
+        <div class="addorsol"></div>
+        <div class="addorsol"></div>
+        <div class="addorsol"></div>
+        <div class="addorsol"></div>
+        <div class="addorsol"></div>
+      </div>
+      <div class="backplace">
+        <button class="backbtn">Back</button>
+      </div>
+      <div class="container">
+        <div class="difficulty">
+          <h1>Difficulty</h1>
+          <select class="addorselect" name="" id="">
+            <option value="10">select</option>
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="1000">1000</option>
+          </select>
+        </div>
+
+        <div class="rightorwrongbox">
+          <div class="rightorwrong">
+            <h1 style="color: green">Right</h1>
+            <h1 style="color: red">Wrong</h1>
+            <h1 class="addorright"></h1>
+            <h1 class="addorwrong"></h1>
+          </div>
+          <button class="addorresetbutton">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div id="advanced">
+      <div class="header">
+        <h1>Advanced</h1>
+      </div>
+      <div class="advancedsubproblem">
+        <h1></h1>
+      </div>
+      <div class="solution">
+        <div class="advancedsol"></div>
+        <div class="advancedsol"></div>
+        <div class="advancedsol"></div>
+        <div class="advancedsol"></div>
+        <div class="advancedsol"></div>
+        <div class="advancedsol"></div>
+      </div>
+      <div class="backplace">
+        <button class="backbtn">Back</button>
+      </div>
+      <div class="container">
+        <div class="difficulty">
+          <h1>Difficulty</h1>
+          <select class="advancedselect" name="" id="">
+            <option value="10">select</option>
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="1000">1000</option>
+          </select>
+        </div>
+
+        <div class="rightorwrongbox">
+          <div class="rightorwrong">
+            <h1 style="color: green">Right</h1>
+            <h1 style="color: red">Wrong</h1>
+            <h1 class="advancedright"></h1>
+            <h1 class="advancedwrong"></h1>
+          </div>
+          <button class="advancedresetbutton">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/learnmath/learnmath.js"></script>
+  </body>
+</html>

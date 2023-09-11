@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../jsProjects/css/XO.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="all">
+      <div class="container">
+        <div class="scoregrid">
+          <h1>Score</h1>
+          <div class="scorexo">
+            <h3>X</h3>
+            <h3>O</h3>
+            <h4 class="scoreX"></h4>
+            <h4 class="scoreO"></h4>
+          </div>
+        </div>
+
+        <div class="nonegrid">
+          <h1>Game Settings</h1>
+          <select class="gamesettings" name="" id="">
+            <option value="1">X always start</option>
+            <option value="2">O always start</option>
+          </select>
+          <button class="setbtn">set</button>
+        </div>
+      </div>
+      <div class="boardgrid">
+        <h1>Tic Tac Toe</h1>
+        <div class="board">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="buttons">
+          <button class="restart">Resart</button>
+          <button class="undo">Undo</button>
+          <button class="newgame">New Game</button>
+        </div>
+      </div>
+      <script src="js/XO/XO.js"></script>
+    </div>
+  </body>
+</html>
