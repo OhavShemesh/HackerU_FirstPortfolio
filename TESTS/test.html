@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Input Example</title>
+  </head>
+  <body>
+    <input type="file" id="fileInput" />
+    <p id="filePath"></p>
+
+    <script>
+      const fileInput = document.getElementById("fileInput");
+      const filePathDisplay = document.getElementById("filePath");
+
+      fileInput.addEventListener("change", function (event) {
+        const selectedFile = event.target.files[0];
+
+        if (selectedFile) {
+          const fileName = selectedFile.name;
+          filePathDisplay.textContent = `Selected file: ${fileName}`;
+        } else {
+          filePathDisplay.textContent = "No file selected";
+        }
+      });
+    </script>
+  </body>
+</html>
