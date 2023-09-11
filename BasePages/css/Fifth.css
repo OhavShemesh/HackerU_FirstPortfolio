@@ -1,0 +1,295 @@
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100vw;
+    height: 634px;
+    background-color: #0EE1E1;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.box img[alt*=drop] {
+    width: 17vw;
+    height: 267px;
+    margin-right: 150px;
+}
+
+.box .header {
+    width: 41vw;
+    margin-right: 182px;
+}
+
+.box .header h1 {
+    font-family: heebo;
+    font-weight: 900;
+    font-size: 66px;
+    text-align: right;
+}
+
+.box .header p {
+    font-family: heebo;
+    font-size: 20px;
+    text-align: right;
+}
+
+.whatsapp {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #00000029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 63px;
+    left: 65px;
+}
+
+.whatsapp img {
+    height: 54px;
+    width: 54px;
+}
+
+.container {
+    width: 100vw;
+    margin-top: 46px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 23px;
+    align-content: center;
+}
+
+
+.areaheader {
+    height: 329px;
+    background-color: #F8F8F8;
+    position: relative;
+}
+
+.areaheader h1 {
+    text-align: center;
+    color: #0EE1E1;
+    font-size: 30px;
+    font-family: heebo;
+    font-weight: 900;
+    margin-top: 29.3px;
+}
+
+.areaheader p {
+    font-family: heebo;
+    font-size: 15px;
+    color: #000;
+    width: 293px;
+    text-align: center;
+    margin: auto;
+}
+
+.areaheader img {
+    width: 40px;
+    height: 42px;
+    margin: 76.4px auto 0;
+    display: block;
+}
+
+.box2 {
+    width: 100vw;
+    height: 939px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 70px;
+}
+
+.mapbox {
+    width: 57vw;
+    height: 939px;
+    float: right;
+    background-color: #0EE1E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map iframe {
+    width: 48.5vw;
+    height: 768px;
+}
+
+.forme {
+    width: 43vw;
+    height: 939px;
+    float: left;
+    background-color: #F0FFFF;
+}
+
+form {
+    width: 425.5px;
+    margin: auto;
+}
+
+.forme h1 {
+    font-family: heebo;
+    font-size: 46px;
+    font-weight: 900;
+    color: #090909;
+    width: 425.5px;
+    margin: 0 auto;
+    direction: rtl;
+    margin-top: 84px;
+}
+
+.forme p {
+    font-family: heebo;
+    font-size: 15px;
+    color: #000;
+    width: 425.5px;
+    margin: 0 auto;
+    direction: rtl;
+    margin-top: 11px;
+    height: 74px;
+}
+
+label {
+    font-size: 13px;
+    font-family: heebo;
+    color: #2C2C2C;
+    font-weight: bold;
+    float: right;
+    margin-top: 21px;
+}
+
+input {
+    width: 425px;
+    height: 51px;
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 4px solid #0EE1E1;
+    margin-top: 6px;
+}
+
+button {
+    width: 425px;
+    height: 51px;
+    background-color: #0EE1E1;
+    font-size: 20px;
+    font-family: heebo;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    margin-top: 24px;
+}
+
+.contact {
+    margin-top: 49px;
+    margin-bottom: 39px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    justify-content: center;
+}
+
+.circle {
+    width: 95px;
+    height: 95px;
+    background-color: #0EE1E1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline {
+    height: 18.5px;
+    width: 100vw;
+    background-color: #0EE1E1;
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .whatsapp {
+        display: none;
+    }
+
+    .box2 {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 70px;
+    }
+
+    .forme {
+        width: 100vw;
+        height: 939px;
+        float: left;
+        background-color: #F0FFFF;
+    }
+
+    .mapbox {
+        width: 100vw;
+        height: 939px;
+        float: right;
+        background-color: #0EE1E1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .map iframe {
+        width: 85vw;
+        height: 768px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+
+    @media screen and (max-width:1024px) {
+        .box .header h1 {
+            font-size: 45px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .container {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+        }
+
+        .whatsapp {
+            display: none;
+        }
+
+        .box .header h1 {
+            font-size: 30px;
+        }
+
+    }
+}
+
+@media screen and (max-width:480px) {
+    .box img[alt*=drop] {
+        margin-right: 37px;
+    }
+
+    .box .header {
+        width: 75vw;
+        margin-right: 37px;
+    }
+}

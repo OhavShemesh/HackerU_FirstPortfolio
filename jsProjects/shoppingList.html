@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="css/shoppingList.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body> 
+    <div class="shadow"></div>
+    <div class="header">
+      <h1>Shopping List</h1>
+    </div>
+    <div class="add">
+      <h1>+</h1>
+    </div>
+    <div class="addbox">
+      <button class="close">X</button>
+      <div class="first">
+        <label for="">Item Name</label>
+        <input class="itemname" type="text" />
+      </div>
+      <div class="second">
+        <label for="">Amount</label>
+        <div class="amountinner">
+          <input class="amount" type="text" />
+          <select class="select" name="" id="">
+            <option value="Pieces">Pieces</option>
+            <option value="KG">KG</option>
+            <option value="Grams">Grams</option>
+          </select>
+        </div>
+      </div>
+      <button class="send">OK</button>
+    </div>
+    <div class="items">
+      </div>
+    </div>
+        <div class="removeall">
+      <h1>Remove All</h1>
+    </div>
+    <script src="js/shoppingList/shoppingList.js"></script>
+  </body>
+</html>
